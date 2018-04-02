@@ -45,7 +45,7 @@ class Student
     name = hash[:name]
     grade = hash[:grade]
     student = Student.new(name, grade)
-    self.save
+    student.save
 
   end
   # Remember, you can access your database connection anywhere in this class
