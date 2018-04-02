@@ -45,6 +45,7 @@ class Student
     name = hash[:name]
     grade = hash[:grade]
     student = Student.new(name, grade)
+    save
     binding.pry
   end
   # Remember, you can access your database connection anywhere in this class
