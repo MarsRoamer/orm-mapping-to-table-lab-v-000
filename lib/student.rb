@@ -42,6 +42,8 @@ class Student
   end
 
   def self.create(hash)
+    name = hash[name]
+    grade = hash[grade]
     binding.pry 
   end
   # Remember, you can access your database connection anywhere in this class
