@@ -39,8 +39,8 @@ class Student
     SQL
     DB[:conn].execute(sql, self.name, self.grade)
 
-    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")
-    # binding.pry
+    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0]
+    binding.pry
   end
   # Remember, you can access your database connection anywhere in this class
   #  with DB[:conn]
